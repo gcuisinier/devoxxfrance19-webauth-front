@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'variables';
+@import '../node_modules/font-awesome/scss/font-awesome';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+
+
+.text-fiftyPercentWhite {
+    color:white;
+    opacity: 0.5;
+}
+
+.content {
+    padding-top:2em;
+}
+
+
+.no-padding {
+    padding:0px;
+}
+
+.bil-bg::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url("/assets/bil.png") ;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 25%;
+
+    opacity: 0.5;
+}
+
+.bil-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.bil-bg2 {
+    background: url("http://3.bp.blogspot.com/-DQSxHIGWodU/T2zOGKfv68I/AAAAAAAAEnw/8tA2i12gFE4/s1600/BIL+logo+2012.png")  center bottom no-repeat;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-size: 20%;
+    opacity: 0.4;
+}

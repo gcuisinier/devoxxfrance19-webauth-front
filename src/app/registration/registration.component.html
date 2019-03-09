@@ -1,0 +1,16 @@
+<div class="card mx-auto" style="width: 30em;">
+  <div class="card-header">
+    Inscription
+  </div>
+  <div class="card-body">
+      <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nom d'utilisateur</label>
+            <input type="text" #userInput class="form-control" value="gcuisinier" id="inputUserName" aria-describedby="usernameHelp" placeholder="Identifiant">
+            <small id="usernameHelp" class="form-text text-muted">Votre nom d'utilisateur</small>
+          </div>
+         
+          <button type="button" class="btn btn-primary"  (click)="register(userInput.value)">Enregistrer</button>
+        </form>
+  </div>
+</div>

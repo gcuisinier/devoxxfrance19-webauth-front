@@ -1,27 +1,30 @@
-# WebauthnFrontend
+# devoxxfrance19-webauth-back
+Back project for Demo WebAuthN @ Devoxx France
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
+[Slides](https://fr.slideshare.net/GildasCuisinier/mot-de-passe-oubli-plus-jamais-avec-webauthn-devoxx-france-2019-141432043?qid=ad849a92-1ed0-4fd8-a912-89dbe0934c5d&v=&b=&from_search=1)
 
-## Development server
+## How to run it ?
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Checkout both project  :
+- https://github.com/gcuisinier/devoxxfrance19-webauth-back
+- https://github.com/gcuisinier/devoxxfrance19-webauth-front
 
-## Code scaffolding
+### Run Back project
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+cd devoxxfrance19-webauth-back
+./mvn spring-boot:run
+```
 
-## Build
+### Run Front project
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+cd devoxxfrance19-webauth-front
+```
+cd devoxxfrance19-webauth-front
+npm install 
+g serve --ssl --host 0.0.0.0 --public-host webauthn.local.gcuisinier.net
+```
 
-## Running unit tests
+## Open website
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+https://webauthn.local.gcuisinier.net:4200
